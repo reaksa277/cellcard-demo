@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Launch faster with a modern, responsive landing page template using HTML5, CSS3, Flexbox, and CSS Grid."
+    />
+    <title>cellcard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header (replaceable) -->
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a href="#" class="logo" aria-label="VibeFlow home">
+          <img src="assets/images/logo_main.png" alt="logomain" />
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="#mobile">Mobile</a></li>
+            <li><a href="#homewifi">Home WiFi</a></li>
+            <li><a href="#digitallifestyle">Digital Lifestyle</a></li>
+            <li><a href="#cooldevice">Cool Devices</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a href="#plan" class="btn">Plan</a>
+          <a href="#cta" class="btn btn-primary">Get SIM</a>
+        </div>
+
+        <!-- Hamburger for mobile -->
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Toggle menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <!-- Mobile menu (panel) -->
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul>
+          <li><a href="#mobile">Mobile</a></li>
+          <li><a href="#homewifi">Home WiFi</a></li>
+          <li><a href="#digitallifestyle">Digital Lifestyle</a></li>
+          <li><a href="#cooldevice">Cool Devices</a></li>
+        </ul>
+        <div class="mobile-cta">
+          <a href="#plan" class="btn">Plan</a>
+          <a href="#cta" class="btn btn-primary">Get SIM</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-media">
+            <img src="assets/images/banner.avif" alt="Product screenshot" />
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <div class="feature-grid" role="list">
+            <article class="feature-card" role="listitem">
+              <div class="icon">⚡</div>
+              <h3>Get SIM</h3>
+            </article>
+
+            <article class="feature-card" role="listitem">
+              <div class="icon">🎯</div>
+              <h3>Top Up</h3>
+            </article>
+
+            <article class="feature-card" role="listitem">
+              <div class="icon">🔧</div>
+              <h3>Promotion</h3>
+            </article>
+
+            <article class="feature-card" role="listitem">
+              <div class="icon">🛡️</div>
+              <h3>Find Store</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Plan -->
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <header class="section-header start">
+            <h2>Main</h2>
+            <p class="muted">
+              Relax! What’s yours is yours to use once you successfully renew
+              your plan.
+            </p>
+          </header>
+
+          <section class="plans">
+            <div class="plan-card">
+              <h3>cellcard AO MOBILE $1</h3>
+              <span class="badge">Data</span>
+
+              <div class="plan-top">
+                <h2>8GB</h2>
+                <h2 class="price">$1.00</h2>
+              </div>
+
+              <ul class="plan-details">
+                <li>📞 On-net Calls: 60 Mins</li>
+                <li>💬 On-net SMS: 60 SMS</li>
+                <li>📅 Validity 7 Days</li>
+              </ul>
+
+              <div class="plan-actions">
+                <a href="#" class="btn-outline">📱 *1615*100#</a>
+                <a href="#" class="btn-fill">🛒 cellcard app</a>
+              </div>
+            </div>
+
+            <div class="plan-card">
+              <h3>cellcard AO MOBILE $1.5</h3>
+              <span class="badge">Data</span>
+
+              <div class="plan-top">
+                <h2>15GB</h2>
+                <h2 class="price">$1.50</h2>
+              </div>
+
+              <ul class="plan-details">
+                <li>📞 On-net Calls: 100 Mins</li>
+                <li>💬 On-net SMS: 100 SMS</li>
+                <li>📅 Validity 7 Days</li>
+                <li>➕ Rollover for next plan</li>
+              </ul>
+
+              <div class="plan-actions">
+                <a href="#" class="btn-outline">📱 *1615*150#</a>
+                <a href="#" class="btn-fill">🛒 cellcard app</a>
+              </div>
+            </div>
+
+            <div class="plan-card">
+              <h3>cellcard AO MOBILE $4</h3>
+              <span class="badge">Data</span>
+
+              <div class="plan-top">
+                <h2>25GB</h2>
+                <h2 class="price">$4.00</h2>
+              </div>
+
+              <ul class="plan-details">
+                <li>📞 On-net Calls: 2500 Mins</li>
+                <li>💬 On-net SMS: 2500 SMS</li>
+                <li>📅 Validity 28 Days</li>
+                <li>➕ Rollover for next plan</li>
+              </ul>
+
+              <div class="plan-actions">
+                <a href="#" class="btn-outline">📱 *1615*400#</a>
+                <a href="#" class="btn-fill">🛒 cellcard app</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS (carousel) -->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <header class="section-header start">
+            <h2>feedback by customer</h2>
+            <p class="muted">
+              Real feedback from customer who use cellcard service.
+            </p>
+          </header>
+
+          <div
+            class="carousel"
+            aria-roledescription="carousel"
+            aria-label="Testimonials carousel"
+          >
+            <div
+              class="carousel-track"
+              id="carouselTrack"
+              style="transform: translateX(0%)"
+            >
+              <div class="testimonial" data-index="0" aria-hidden="false">
+                <blockquote>
+                  “Cellcard’s coverage is incredibly stable. I travel often for
+                  work, and I stay connected everywhere I go.”
+                </blockquote>
+                <figcaption class="muted">— Dara S., Business Owner</figcaption>
+              </div>
+              <div class="testimonial" data-index="1" aria-hidden="true">
+                <blockquote>
+                  “The data plans are affordable and flexible. Switching
+                  packages takes only seconds—it’s super convenient.”
+                </blockquote>
+                <figcaption class="muted">
+                  — Sokha R., University Student
+                </figcaption>
+              </div>
+              <div class="testimonial" data-index="2" aria-hidden="true">
+                <blockquote>
+                  “Customer support is fast and friendly. Anytime I had an
+                  issue, Cellcard resolved it right away.”
+                </blockquote>
+                <figcaption class="muted">— Vuthy M., Freelancer</figcaption>
+              </div>
+            </div>
+
+            <div
+              class="carousel-controls"
+              role="group"
+              aria-label="Carousel controls"
+            >
+              <button id="prevBtn" aria-label="Previous testimonial">
+                &larr; Prev
+              </button>
+              <button id="nextBtn" aria-label="Next testimonial">
+                Next &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta" class="cta">
+        <div class="container">
+          <div class="cta-inner">
+            <h2>Ready to launch?</h2>
+            <p class="muted">
+              Grab the template, swap content, and publish today.
+            </p>
+            <div
+              class="cta-actions"
+              style="
+                margin-top: 16px;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                flex-wrap: wrap;
+              "
+            >
+              <a class="btn btn-primary" href="#pricing">Get started</a>
+              <a class="btn" href="#features">Explore features</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="container footer-inner">
+        <div
+          style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap"
+        >
+          <a
+            href="#"
+            class="logo"
+            style="font-weight: 700; text-decoration: none"
+          >
+            <img src="assets/images/logo_main.png" alt="logomain" />
+          </a>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="#QuickDiscover">Quick Discover</a></li>
+            <li><a href="#Add-ons&Lifestyle">Add-ons & Lifestyle</a></li>
+            <li><a href="#Support">Support</a></li>
+            <li><a href="#Our Company">Our Company</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-social" aria-hidden="false" role="list">
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="GitHub">🐙</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+        </div>
+        <div class="sub-footer">
+          <p class="muted" style="margin: 0">
+            All Rights Reserved © <span id="year"></span>
+          </p>
+          <ul class="muted">
+            <li><a href="#QuickDiscover">Term & Conditions</a></li>
+            <li><a href="#Add-ons&Lifestyle">Privacy Policy</a></li>
+            <li><a href="#Support">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* =========================
+     Small JS to meet interactions
+     - hamburger open/close
+     - navbar background on scroll
+     - smooth scroll fallback (already CSS smooth)
+     - testimonial carousel (controls + aria)
+     ========================= */
+
+      // Year set
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Elements
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const header = document.getElementById("siteHeader");
+      const navLinks = document.querySelectorAll(
+        ".nav-list a, .mobile-menu a, .header-cta a"
+      );
+
+      // Hamburger toggle
+      hamburger &&
+        hamburger.addEventListener("click", () => {
+          const open = hamburger.classList.toggle("active");
+          mobileMenu.classList.toggle("open", open);
+          hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+          mobileMenu.setAttribute("aria-hidden", open ? "false" : "true");
+        });
+
+      // Close mobile menu when link clicked
+      document.querySelectorAll(".mobile-menu a").forEach((a) => {
+        a.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          mobileMenu.classList.remove("open");
+          hamburger.setAttribute("aria-expanded", "false");
+          mobileMenu.setAttribute("aria-hidden", "true");
+        });
+      });
+
+      // Navbar background change on scroll (sticky effect)
+      const scrollToggle = () => {
+        if (window.scrollY > 12) header.classList.add("scrolled");
+        else header.classList.remove("scrolled");
+      };
+      scrollToggle();
+      window.addEventListener("scroll", scrollToggle, { passive: true });
+
+      // Smooth scrolling for anchor links (improve keyboard control)
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          const href = link.getAttribute("href");
+          if (href && href.startsWith("#")) {
+            const el = document.querySelector(href);
+            if (el) {
+              e.preventDefault();
+              el.scrollIntoView({ behavior: "smooth", block: "start" });
+              // ensure mobile menu closes on selection
+              hamburger && hamburger.classList.remove("active");
+              mobileMenu && mobileMenu.classList.remove("open");
+            }
+          }
+        });
+      });
+
+      /* =========================
+     Simple Carousel (Testimonials)
+     - JS-based, accessible
+     - Prev / Next controls
+     - Updates aria-hidden on panels
+     ========================= */
+      (function () {
+        const track = document.getElementById("carouselTrack");
+        if (!track) return;
+        const slides = Array.from(track.children);
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        let index = 0;
+        const total = slides.length;
+
+        function goTo(i) {
+          index = (i + total) % total;
+          const offset = -index * 100;
+          track.style.transform = "translateX(" + offset + "%)";
+          slides.forEach((s, idx) =>
+            s.setAttribute("aria-hidden", idx === index ? "false" : "true")
+          );
+        }
+
+        prevBtn && prevBtn.addEventListener("click", () => goTo(index - 1));
+        nextBtn && nextBtn.addEventListener("click", () => goTo(index + 1));
+
+        // keyboard control
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowLeft") goTo(index - 1);
+          if (e.key === "ArrowRight") goTo(index + 1);
+        });
+
+        // auto-play (optional) with pause on hover
+        let autoplay = setInterval(() => goTo(index + 1), 5000);
+        const carouselEl = track.parentElement;
+        carouselEl &&
+          carouselEl.addEventListener("mouseenter", () =>
+            clearInterval(autoplay)
+          );
+        carouselEl &&
+          carouselEl.addEventListener("mouseleave", () => {
+            autoplay = setInterval(() => goTo(index + 1), 5000);
+          });
+
+        goTo(0);
+      })();
+    </script>
+  </body>
+</html>
