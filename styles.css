@@ -97,7 +97,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 14px 0;
+  padding: 16px;
 }
 
 .logo {
@@ -239,7 +239,7 @@ a {
 /* Fullscreen Hero */
 .hero {
   width: 100%;
-  height: 100vh; /* Full screen height */
+  aspect-ratio: 35 / 13;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -510,6 +510,9 @@ a {
   .mobile-menu {
     display: none;
   } /* controlled by JS */
+  .hero {
+    aspect-ratio: 21 / 9;
+  }
   .hero-inner {
     grid-template-columns: 1fr;
   }
